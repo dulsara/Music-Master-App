@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <!-- Search / will display always 
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="action_search"
+          android:showAsAction="ifRoom"/>-->
+     
+  
+    
+    <item android:id="@+id/action_exit"
+          android:icon="@drawable/exit"
+          android:title="exit"
+          android:showAsAction="ifRoom" />
+     
+    <!-- Help -->
+    <item android:id="@+id/sorting"
+          android:icon="@drawable/ic_action_sort_by_size"
+          android:title="sorting"
+          android:showAsAction="never"/>
+     
+    <!-- Check updates -->
+    <item android:id="@+id/action_check_updates"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="check updates"
+          android:showAsAction="never" />
+    
+       <item android:id="@+id/action_list_number"
+          android:title="listNumber"
+          android:showAsAction="never" />
+    
+
+</menu>

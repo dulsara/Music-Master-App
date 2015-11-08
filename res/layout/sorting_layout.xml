@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   tools:context="com.portal.musicmaster.SortingActivity"
+     >
+
+    <TextView
+        android:id="@+id/sorting_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Sorting Area"
+       />
+     <RadioGroup
+        android:id="@+id/selected_sorting_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sorting_area"
+        android:layout_marginTop="16dp" >
+
+        <RadioButton
+            android:id="@+id/radio_sorting_area_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="by using Track" />
+
+        <RadioButton
+            android:id="@+id/radio_sorting_area_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by using Artists" />
+
+        
+    </RadioGroup>
+
+     <TextView
+         android:id="@+id/sortedby"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="Sorting Catagories" />
+     
+          <RadioGroup
+        android:id="@+id/sorting_catagory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sortedby"
+        android:layout_marginTop="12dp" >
+
+        <RadioButton
+            android:id="@+id/radio_sort_using_artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="sort by ArtistName" />
+
+        <RadioButton
+            android:id="@+id/radio_sort_using_trackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sort by using Tracks" />
+
+        
+    </RadioGroup>
+
+          <TextView
+              android:id="@+id/sortingOrder"
+              android:layout_below="@+id/sorting_catagory"              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Select Sorting Order"
+              android:layout_marginTop="12dp"  />
+          
+           <RadioGroup
+        android:id="@+id/sorting_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sortingOrder"
+        android:layout_marginTop="12dp" >
+
+        <RadioButton
+            android:id="@+id/radio_sort_order_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="sort by Descending Order" />
+
+        <RadioButton
+            android:id="@+id/radio_sort_order_asec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sort by Ascending order" />
+
+        
+    </RadioGroup>
+
+           <Button
+               android:id="@+id/sort"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sort and View" 
+               android:layout_marginLeft="75dp"
+               android:layout_marginTop="25dp"
+               android:onClick="sort"/>
+
+</LinearLayout>
